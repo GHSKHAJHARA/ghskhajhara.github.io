@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,39 +7,43 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f8fb;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
       padding: 20px;
-      color: #333;
     }
     .container {
       max-width: 800px;
+      background: white;
       margin: auto;
-      background: #fff;
-      border-radius: 12px;
       padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    .profile-pic {
+    .profile-img {
       text-align: center;
     }
-    .profile-pic img {
+    .profile-img img {
       width: 150px;
       height: 180px;
-      object-fit: cover;
-      border: 4px solid #007BFF;
-      border-radius: 8px;
+      border: 3px solid #007BFF;
+      border-radius: 10px;
     }
     h2 {
       text-align: center;
+      margin: 10px 0;
       color: #007BFF;
-      margin-top: 10px;
     }
     h3 {
       color: #007BFF;
       border-bottom: 2px solid #007BFF;
       padding-bottom: 5px;
       margin-top: 30px;
+    }
+    h4 {
+      text-decoration: underline;
+      font-weight: bold;
+      margin-top: 20px;
     }
     p {
       margin: 6px 0;
@@ -52,9 +57,9 @@
       background-color: #007BFF;
       color: white;
       padding: 10px 20px;
-      font-size: 16px;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
     }
     .download-btn button:hover {
@@ -63,69 +68,74 @@
   </style>
 </head>
 <body>
-  <div class="container" id="profileContent">
-    <div class="profile-pic">
+  <div class="container" id="student-profile">
+    <div class="profile-img">
       <img src="https://i.postimg.cc/Z5rqbtpq/Puru.jpg" alt="Purusharth Rai" />
     </div>
-    <h2><b>Purusharth Rai</b></h2>
+    <h2>Purusharth Rai</h2>
 
     <h3>Personal Details</h3>
     <p><b>Father's Name:</b> Sri Manjai Rai</p>
     <p><b>Mother's Name:</b> Srimati Madhuri Devi</p>
-    <p><b>Date of Birth:</b> 01-01-2012</p>
+    <p><b>Date of Birth:</b> 01-01-2012 (First January Two Thousand Twelve)</p>
     <p><b>Sex:</b> Male</p>
-    <p><b>Religion:</b> Hindu</p>
+    <p><b>Dharm:</b> Hindu</p>
     <p><b>Caste:</b> Rajbhar</p>
     <p><b>Category:</b> OBC</p>
 
-    <h3>School Details</h3>
-    <h4><u><b>Class 9</b></u></h4>
-    <p><b>School:</b> Government High School Khajhara, Chandauli</p>
-    <p><b>Session:</b> 2024–25</p>
+    <h3><u><b>School Details</b></u></h3>
+
+    <h4>Class 9 Details</h4>
+    <p><b>School Name:</b> Government High School Khajhara, Chandauli</p>
+    <p><b>Session:</b> 2024-25</p>
     <p><b>Date of Admission:</b> 01-04-2024</p>
     <p><b>S.R. No.:</b> 119</p>
-    <p><b>Roll No.:</b> 07</p>
+    <p><b>Class Roll No.:</b> 07</p>
 
-    <h4><u><b>Class 10</b></u></h4>
-    <p><b>Session:</b> 2025–26</p>
+    <h4>Class 10 Details</h4>
+    <p><b>Session:</b> 2025-26</p>
     <p><b>Date of Promotion:</b> 31-03-2025</p>
-    <p><b>Admission Date:</b> 01-04-2025</p>
-    <p><b>Roll No.:</b> 09</p>
+    <p><b>Date of Admission:</b> 01-04-2025</p>
+    <p><b>S.R. No.:</b> 119</p>
+    <p><b>Class Roll No.:</b> 09</p>
 
-    <h3>Other Details</h3>
-    <p><b>Aadhar No.:</b> 5413 9302 5373</p>
+    <h3><u><b>Other Details</b></u></h3>
+    <p><b>Aadhar No.:</b> 541393025373</p>
     <p><b>PEN No.:</b> 22930188964</p>
-    <p><b>Mobile:</b> 9305236760</p>
-    <p><b>Email:</b> purusharth@gmail.com</p>
+    <p><b>Apaar ID:</b> </p>
+    <p><b>Mobile No.:</b> 93052 36760</p>
+    <p><b>Email ID:</b> Purusharth@gmail.com</p>
 
-    <h3>Bank Details</h3>
+    <h3><u><b>Account Details</b></u></h3>
     <p><b>Account No.:</b> 84450100002270</p>
     <p><b>IFSC Code:</b> BARB0BUPGBX</p>
-    <p><b>Bank:</b> Baroda U.P. Bank, Barathi, Chandauli</p>
+    <p><b>Bank Name:</b> Baroda U.P. Bank Barathi, Chandauli</p>
 
     <h3>Address</h3>
     <p><b>Village:</b> Jamdih</p>
     <p><b>Post:</b> Naraina</p>
     <p><b>Tahsil:</b> Sakaldiha</p>
     <p><b>District:</b> Chandauli</p>
-    <p><b>Pin:</b> 232108</p>
+    <p><b>Pin Code:</b> 232108</p>
     <p><b>State:</b> Uttar Pradesh</p>
 
     <div class="download-btn">
-      <button onclick="downloadPDF()">Download PDF</button>
+      <button onclick="downloadProfile()">Download PDF</button>
     </div>
   </div>
 
   <script>
-    function downloadPDF() {
-      const element = document.getElementById('profileContent');
-      html2pdf().from(element).set({
-        margin: 10,
-        filename: 'Purusharth_Rai_Profile.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-      }).save();
+    function downloadProfile() {
+      const element = document.getElementById("student-profile");
+      const opt = {
+        margin:       0.5,
+        filename:     'Purusharth_Rai_Profile.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+      };
+      html2pdf().set(opt).from(element).save();
     }
   </script>
 </body>
