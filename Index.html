@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body style="font-family:sans-serif; padding:20px; max-width:800px; margin:auto;">
+  <div style="text-align:center;">
+    <img src="https://i.postimg.cc/Z5rqbtpq/Puru.jpg" alt="Purusharth Rai" style="width:150px; border-radius:10px;">
+    <h2><b>Purusharth Rai</b></h2>
+  </div>
+
+  <p><b>Father's Name:</b> Sri Manjai Rai</p>
+  <p><b>Mother's Name:</b> Srimati Madhuri Devi</p>
+  <p><b>Date of Birth:</b> 01-01-2012 (first January two thousand twelve)</p>
+  <p><b>Sex:</b> Male</p>
+  <p><b>Dharm:</b> Hindu</p>
+  <p><b>Caste:</b> Rajbhar</p>
+  <p><b>Category:</b> OBC</p>
+
+  <h3 style="color:#0066cc; text-decoration:underline;"><b>School Details :</b></h3>
+
+  <h4 style="text-decoration:underline;"><b>Class 9 Details:</b></h4>
+  <p><b>School Name:</b> Government High School Khajhara, Chandauli</p>
+  <p><b>Session:</b> 2024-25</p>
+  <p><b>Date of Admission in Class 9:</b> 01-04-2024</p>
+  <p><b>S.R. No.:</b> 119</p>
+  <p><b>Class Roll No.:</b> 07</p>
+
+  <h4 style="text-decoration:underline;"><b>Class 10 Details:</b></h4>
+  <p><b>Session:</b> 2025-26</p>
+  <p><b>Date of Promotion in Class 10:</b> 31-03-2024</p>
+  <p><b>Date of Admission in Class 10:</b> 01-04-2025</p>
+  <p><b>S.R. No.:</b> 119</p>
+  <p><b>Class Roll No.:</b> 09</p>
+
+  <h4 style="text-decoration:underline;"><b>Other Details:</b></h4>
+  <p><b>Aadhar No.:</b> 541393025373</p>
+  <p><b>PEN No.:</b> 22930188964</p>
+  <p><b>Apaar Id:</b> </p>
+  <p><b>Mob. No.:</b> 93052 36760</p>
+  <p><b>Email id:</b> Purusharth@gmail.com</p>
+
+  <h4 style="text-decoration:underline;"><b>Account Details:</b></h4>
+  <p><b>Account No.:</b> 84450100002270</p>
+  <p><b>IFSC code:</b> BARB0BUPGBX</p>
+  <p><b>Bank Name:</b> Baroda U.P. Bank Barathi, Chandauli</p>
+
+  <h4 style="text-decoration:underline;"><b>Address:</b></h4>
+  <p><b>Village:</b> Jamdih</p>
+  <p><b>Post:</b> Naraina</p>
+  <p><b>Tahsil:</b> Sakaldiha</p>
+  <p><b>District:</b> Chandauli</p>
+  <p><b>Pin code:</b> 232108</p>
+  <p><b>State:</b> Uttar Pradesh</p>
+
+  <!-- Download Button -->
+  <button id="download" style="background-color: #4CAF50; color: white; padding: 10px 15px; font-size: 16px; cursor: pointer; border: none; border-radius: 5px;">Download Details as PDF</button>
+
+  <script>
+    document.getElementById('download').addEventListener('click', function () {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.text('Purusharth Rai', 20, 20);
+      doc.text('Father\'s Name: Sri Manjai Rai', 20, 30);
+      doc.text('Mother\'s Name: Srimati Madhuri Devi', 20, 40);
+      doc.text('Date of Birth: 01-01-2012 (first January two thousand twelve)', 20, 50);
+      doc.text('Sex: Male', 20, 60);
+      doc.text('Dharm: Hindu', 20, 70);
+      doc.text('Caste: Rajbhar', 20, 80);
+      doc.text('Category: OBC', 20, 90);
+      doc.text('School Name: Government High School Khajhara, Chandauli', 20, 100);
+      doc.text('Session: 2024-25', 20, 110);
+      doc.text('Date of Admission in Class 9: 01-04-2024', 20, 120);
+      doc.text('S.R. No.: 119', 20, 130);
+      doc.text('Class Roll No.: 07', 20, 140);
+      doc.text('Session: 2025-26', 20, 150);
+      doc.text('Date of Promotion in Class 10: 31-03-2024', 20, 160);
+      doc.text('Date of Admission in Class 10: 01-04-2025', 20, 170);
+      doc.text('S.R. No.: 119', 20, 180);
+      doc.text('Class Roll No.: 09', 20, 190);
+      doc.text('Aadhar No.: 541393025373', 20, 200);
+      doc.text('PEN No.: 22930188964', 20, 210);
+      doc.text('Mob. No.: 93052 36760', 20, 220);
+      doc.text('Email id: Purusharth@gmail.com', 20, 230);
+      doc.text('Account No.: 84450100002270', 20, 240);
+      doc.text('IFSC code: BARB0BUPGBX', 20, 250);
+      doc.text('Bank Name: Baroda U.P. Bank Barathi, Chandauli', 20, 260);
+      doc.text('Address: Village: Jamdih, Post: Naraina, Tahsil: Sakaldiha, District: Chandauli, Pin code: 232108, State: Uttar Pradesh', 20, 270);
+
+      // Save the PDF
+      doc.save('Purusharth_Rai_Details.pdf');
+    });
+  </script>
+</body>
+</html>
